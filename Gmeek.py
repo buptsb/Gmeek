@@ -140,7 +140,7 @@ class GMEEK():
 
         postBase["postTitle"]=issue["postTitle"]
         postBase["postUrl"]=self.blogBase["homeUrl"]+"/"+issue["postUrl"]
-        postBase["description"]=issue["description"]
+        postBase["description"]= ""
         postBase["ogImage"]=issue["ogImage"]
         postBase["postBody"]=post_body
         postBase["commentNum"]=issue["commentNum"]
