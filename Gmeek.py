@@ -140,7 +140,7 @@ class GMEEK():
 
         postBase["postTitle"]=issue["postTitle"]
         postBase["postUrl"]=self.blogBase["homeUrl"]+"/"+issue["postUrl"]
-        postBase["description"]= ""
+        postBase["description"]= issue["description"]
         postBase["ogImage"]=issue["ogImage"]
         postBase["postBody"]=post_body
         postBase["commentNum"]=issue["commentNum"]
@@ -297,7 +297,7 @@ class GMEEK():
                         period="."
                 else:
                     period=self.blogBase["rssSplit"]
-                self.blogBase[listJsonName][postNum]["description"]=issue.body.split(period)[0]+period
+                self.blogBase[listJsonName][postNum]["description"]=''
                 
             self.blogBase[listJsonName][postNum]["top"]=0
             for event in issue.get_events():
