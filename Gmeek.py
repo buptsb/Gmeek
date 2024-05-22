@@ -297,7 +297,7 @@ class GMEEK():
                         period="."
                 else:
                     period=self.blogBase["rssSplit"]
-                self.blogBase[listJsonName][postNum]["description"]="@buptsb's block"
+                self.blogBase[listJsonName][postNum]["description"]="@buptsb's blog"
                 
             self.blogBase[listJsonName][postNum]["top"]=0
             for event in issue.get_events():
